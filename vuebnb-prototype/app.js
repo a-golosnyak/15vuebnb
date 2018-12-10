@@ -11,5 +11,16 @@ var app = new Vue({
 			prices: sample.prices,
 			contracted: true,
 			modalOpen: false
+		},
+		watch: {
+			modalOpen: function() {
+				varclassName = 'modal-open';
+				if (this.modalOpen) {
+					document.body.classList.add(className);
+				} 
+				else {
+					document.body.classList.remove(className);
+				}
+			}
 		}
 	});
