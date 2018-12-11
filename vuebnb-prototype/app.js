@@ -10,7 +10,8 @@ var app = new Vue({
 			amenities: sample.amenities,
 			prices: sample.prices,
 			contracted: true,
-			modalOpen: false
+			modalOpen: false,
+			message: 'Hello world'
 		},
 		watch: {
 			modalOpen: function() {
@@ -21,6 +22,12 @@ var app = new Vue({
 				else {
 					document.body.classList.remove(className);
 				}
+			},
+
+			message: function(newVal, oldVal) {
+				console.log(oldVal, ', ', newVal); 
 			}
 		}
 	});
+
+setTimeout(function() { app.message = 'Message';}, 2000);
