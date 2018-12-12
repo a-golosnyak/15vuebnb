@@ -197,3 +197,20 @@ body.modal-open {
     overflow:hidden;
     position: fixed;
 }
+
+.modal-close {
+    position:absolute;
+    right:0;
+    top:0;
+    padding:0px 28px 8px;
+    font-size:4em;
+    width:auto;
+    height:auto;
+    background:transparent;
+    border:0;
+    outline:none;
+    color:#ffffff;
+    z-index:1000;
+    font-weight:100;
+    line-height:1;
+}
