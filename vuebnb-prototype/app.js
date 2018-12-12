@@ -45,6 +45,10 @@ var app = new Vue({
 	beforeDestroy: function (){
 		alert("beforeDestroy section");
 	},
+	destroyed: function (){
+		document.removeEventListener('keyup', this.escapeKeyListener);
+		alert("destroyed section");
+	}
 });
 
 function escapeKeyListener(evt) {
