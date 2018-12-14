@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Storage as Storage;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
