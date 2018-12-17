@@ -33,8 +33,11 @@ var app = new Vue({
   },
   created() {
     document.addEventListener('keyup', this.escapeKeyListener);
+    
   },
   destroyed() {
     document.removeEventListener('keyup', this.escapeKeyListener);
   }
 });
+
+alert("created!!!__S!");
