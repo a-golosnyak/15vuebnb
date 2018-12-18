@@ -40,4 +40,4 @@ var app = new Vue({
   }
 });
 
-alert("created!!!__S!");
+alert("created!!!S!");
