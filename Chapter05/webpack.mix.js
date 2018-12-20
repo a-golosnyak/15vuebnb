@@ -19,29 +19,3 @@ mix
   })
 ;
 
-mix.webpackConfig({
-   plugins: [
-      new BrowserSyncPlugin(
-         {
-            host: '192.168.10.10',
-            port: 3000,
-            proxy: 'http://app.app',
-            files: [
-               './**/*.css',
-               './app/**/*',
-               './config/**/*',
-               './resources/views/**/*',
-               './routes/**/*'
-            ],
-            watchOptions: {
-              usePolling: true,
-              interval: 500
-            },
-            open: false
-         },
-         {
-            reload: false
-         }
-      )
-   ]
-})

@@ -8,6 +8,8 @@
 5. php artisan db:seens
 6. npm run dev
 7. vagant up
+8. 
 
   Optionaly:
   vagrant reload --provision
+  npm install -g browser-sync
