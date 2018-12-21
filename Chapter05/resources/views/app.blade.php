@@ -21,6 +21,11 @@
       <button class="view-photos">View Photos</button>
     </div>
   </div>
+
+    <div class="modal-content">
+        <image-carousel></image-carousel>
+    </div>
+
   <div class="container">
     <div class="heading">
       <h1>@{{ title }}</h1>
