@@ -8,7 +8,8 @@
 5. php artisan db:seeds
 6. npm run dev
 7. vagant up
-8. 
+8. vagrant ssh
+9. 
 
   Optionaly:
   vagrant reload --provision
