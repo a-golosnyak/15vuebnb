@@ -5,6 +5,23 @@ import { populateAmenitiesAndPrices } from './helpers';
 let model = JSON.parse(window.vuebnb_listing_model);
 model = populateAmenitiesAndPrices(model);
 
+Vue.component("image-carousel", {
+    template: `<div class='image-carousel'>
+                <img v-bind:src="images[0]"/>
+                </div>`,
+    data() {
+        return {
+            images:[
+                '/images/1/Image_1.jpg',
+                '/images/1/Image_2.jpg',
+                '/images/1/Image_3.jpg',
+                '/images/1/Image_4.jpg'
+            ]
+        }
+    }
+});
+
+
 var app = new Vue({
   el: '#app',
   data: Object.assign(model, {
@@ -40,4 +57,7 @@ var app = new Vue({
   }
 });
 
-alert("created!!!! sdcsc_");
+
+
+
+//alert("created!!!! sdcsc_");

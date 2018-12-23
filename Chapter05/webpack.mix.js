@@ -15,6 +15,7 @@ mix
   .copy('resources/assets/images', 'public/images')
   .browserSync({
     proxy: process.env.APP_URL,
+    port: 8000,
     open: false
   })
 ;
