@@ -22,6 +22,30 @@
                 </div>
             </div>
 
+            <!--script type="text/javascript">
+                var app1 = new Vue({
+                    e1: '#app',
+                    data: {
+                        val: 1    
+                    },
+                    computed: {
+                        message() {
+                            return `The value is ${this.val}`
+                        }
+                    }
+                });
+
+                setTimeout(function() {
+                    app1.val = 2;
+                }, 2000);
+
+            </script>
+
+            <div id="app1">
+                {{--message --}}
+            </div-->
+
+
             <div class="modal-content">
                 <image-carousel></image-carousel>
             </div>
