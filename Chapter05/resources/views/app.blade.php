@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Vuebnb</title>
         <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script type="text/javascript">
             window.vuebnb_listing_model = "{!! addslashes(json_encode($model)) !!}"
         </script>
@@ -47,7 +48,7 @@
 
 
             <div class="modal-content">
-                <image-carousel></image-carousel>
+                <image-carousel :images="images"></image-carousel>
             </div>
 
             <div class="container">
