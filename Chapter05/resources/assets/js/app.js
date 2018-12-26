@@ -44,7 +44,6 @@ Vue.component("image-carousel", {
 
 
 
-
 var app = new Vue({
   el: '#app',
   data: Object.assign(model, {
