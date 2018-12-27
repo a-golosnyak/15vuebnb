@@ -253,3 +253,7 @@ body.modal-open {
         font-size: 3rem;
     }
 }
+
+.rcolor{
+    color: red;
+}

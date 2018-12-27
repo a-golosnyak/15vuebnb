@@ -47,13 +47,14 @@
             </div-->
 
 
-            <div class="modal-content">
+            <!--div class="modal-content">
                 <image-carousel :images="images"></image-carousel>
-            </div>
+            </div-->
 
             <div class="container">
                 <div class="heading">
-                    <h1>@{{ title }}</h1>
+                    <h1 v-bind:class='{rcolor: rcolor}'
+                        v-on:click='rcolor = false'>@{{ title }}</h1>
                     <p>@{{ address }}</p>
                 </div>
                 <hr>

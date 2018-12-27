@@ -9,7 +9,7 @@ Vue.component("image-carousel", {
     template: `<div class='image-carousel'>
                 <img v-bind:src="images[index]"/>
                     <div class='controls'>
-                        <carousel-control dir="left"></carousel-control>
+                        <carousel-control dir="left" @change></carousel-control>
                         <carousel-control dir="right"></carousel-control>                    
                     </div>
                 </div>`,
@@ -51,7 +51,8 @@ var app = new Vue({
       'background-image': `url(${model.images[0]})`
     },
     contracted: true,
-    modalOpen: false
+    modalOpen: false,
+    rcolor: true
   }),
   methods: {
     escapeKeyListener(evt) {
