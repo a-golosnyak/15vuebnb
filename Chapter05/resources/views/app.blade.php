@@ -35,11 +35,9 @@
                         }
                     }
                 });
-
                 setTimeout(function() {
                     app1.val = 2;
                 }, 2000);
-
             </script>
 
             <div id="app1">
