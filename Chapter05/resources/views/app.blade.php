@@ -52,7 +52,7 @@
             <div class="container">
                 <div class="heading">
                     <h1 v-bind:class='{rcolor: rcolor}'
-                        v-on:click='rcolor = false'>@{{ title }}</h1>
+                        v-on:click='rColorAction(" asd")'>@{{ title }}</h1>
                     <p>@{{ address }}</p>
                 </div>
                 <hr>

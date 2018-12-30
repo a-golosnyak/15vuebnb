@@ -59,6 +59,9 @@ var app = new Vue({
       if (evt.keyCode === 27 && this.modalOpen) {
         this.modalOpen = false;
       }
+    },
+    rColorAction(param1){
+//        this.rcolor = !this.rcolor;
     }
   },
   watch: {
@@ -80,6 +83,14 @@ var app = new Vue({
   }
 });
 
+var timerId1 = setInterval(function(){
+    app.rcolor = !app.rcolor;
+//    alert('method!' + app.rcolor);
+}, 500);
+
+setTimeout(function(){
+    clearInterval(timerId1);
+}, 2500);
 
 
 
