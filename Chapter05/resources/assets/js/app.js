@@ -7,10 +7,10 @@ model = populateAmenitiesAndPrices(model);
 
 Vue.component("image-carousel", {
     template: `<div class='image-carousel'>
-                <img v-bind:src="images[index]"/>
+                <img v-bind:src="image"/>
                     <div class='controls'>
-                        <carousel-control dir="left" @change></carousel-control>
-                        <carousel-control dir="right"></carousel-control>                    
+                        <carousel-control dir="left" @change-image="changeImage"></carousel-control>
+                        <carousel-control dir="right" @change-image="changeImage"></carousel-control>                    
                     </div>
                 </div>`,
     props: ['images'],
@@ -22,6 +22,19 @@ Vue.component("image-carousel", {
     computed: {
         image() {
             return this.images[this.index];
+        }
+    },
+    methods: {
+        changeImage(val) {
+            let newVal = this.index + parseInt(val);
+
+            if (newVal < 0) {
+                this.index = this.images.length -1;
+            } else if (newVal === this.images.length) {
+                this.index = 0;
+            } else {
+                this.index =newVal;
+            }
         }
     },
     components: {
@@ -62,6 +75,7 @@ var app = new Vue({
     },
     rColorAction(param1){
 //        this.rcolor = !this.rcolor;
+//        alert('method!' + this.rcolor + param1);
     }
   },
   watch: {

@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Vuebnb</title>
         <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script-->
+        <link rel="stylesheet" href="{{ asset('open-sans-all/css/open-sans.css') }}">
+        <link rel="stylesheet" href="{{ asset('font-awesome/css/font-awesome.css') }}">
+
         <script type="text/javascript">
             window.vuebnb_listing_model = "{!! addslashes(json_encode($model)) !!}"
         </script>
@@ -45,9 +48,9 @@
             </div-->
 
 
-            <!--div class="modal-content">
+            <div class="modal-content">
                 <image-carousel :images="images"></image-carousel>
-            </div-->
+            </div>
 
             <div class="container">
                 <div class="heading">
